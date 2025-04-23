@@ -280,8 +280,6 @@ nav {
 
 #home_buttons {
     display: grid; /* buttons side by side */
-    grid-template-columns: 1fr 1fr 1fr;
-
 /** margin-left: responsive; */
 /** margin-right: responsive; */
 }
@@ -301,6 +299,7 @@ nav {
     #home_buttons {
         margin-left: 6em;
         margin-right: 6em;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 /* Mobile */
@@ -314,6 +313,7 @@ nav {
     #home_buttons {
         margin-left: 3em;
         margin-right: 3em;
+        grid-template-columns: 1fr;
     }
 }
 
