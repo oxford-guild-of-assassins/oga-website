@@ -280,7 +280,7 @@ nav {
 
 #home_buttons {
     display: grid; /* buttons side by side */
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
 /** margin-left: responsive; */
 /** margin-right: responsive; */
