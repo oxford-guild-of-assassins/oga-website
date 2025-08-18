@@ -3,12 +3,12 @@ name: Publish
 on:
   push:
     branches: ['main']
-  pull_request:
-    branches: ['main']
+    paths-ignore:
+      - '.github/**'
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}:latest
+  IMAGE_TAG: ${{ github.repository }}:latest
 
 jobs:
   publish:
@@ -34,4 +34,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_TAG }}
