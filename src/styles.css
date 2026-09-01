@@ -257,6 +257,15 @@ nav {
     position: absolute; /* stick to page and cover */
     object-fit: cover;
     object-position: top;
+
+    width: 100%; /* fit image to page */
+/** height: responsive; */
+    z-index: -999; /* render behind everything else */
+}
+#home_background_wrapper {
+    position: absolute; /* stick to page and cover */
+    object-fit: cover;
+    object-position: top;
     margin-left: -0.5em; /* negate margin from wrapper */
 
     width: 100%; /* fit image to page */
